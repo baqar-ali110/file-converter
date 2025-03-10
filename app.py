@@ -9,11 +9,11 @@ st.title("📂 File Converter Web App")
 # 🎯to upload file
 uploaded_file = st.file_uploader("Upload a file", type=["csv", "xlsx", "txt"])
 
-# 🎯 Agar file upload hui hai to usko read karna
+
 if uploaded_file is not None:
     file_name = uploaded_file.name
 
-    # 🎯 File type detect karna
+    # 🎯 To Detect File Types
     if file_name.endswith(".csv"):
         df = pd.read_csv(uploaded_file)
     elif file_name.endswith(".xlsx"):
