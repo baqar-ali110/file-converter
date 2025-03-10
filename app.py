@@ -15,7 +15,7 @@ if uploaded_file is not None:
 
     # 🎯 File type detect karna
     if file_name.endswith(".csv"):
-        df = pd.read_csv(uploaded_file) 
+        df = pd.read_csv(uploaded_file)
     elif file_name.endswith(".xlsx"):
         df = pd.read_excel(uploaded_file)
     elif file_name.endswith(".txt"):
